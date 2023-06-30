@@ -8,7 +8,6 @@ from views import app
 
 with sqlite3.connect(DATABASE_PATH) as connection:
     c = connection.cursor()
-    c.execute("DROP TABLE tasks")
-    with app.app_context():
-        db.create_all()
+    #with app.app_context():
+        #db.c*reate_all()
     
